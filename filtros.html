@@ -1,0 +1,713 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="imagenes/logo.jpg" type="image/x-icon" />
+    <title>Fiestas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="principal.html" class="texto-degradado">
+                <img src="imagenes/logopag.jpg" alt="blaack" height="44" width="55" />
+                Royal Swan
+            </a>
+        </h1>
+        <nav>  
+            <ul>
+                <li><a href="registro.html">Gestionar Eventos</a></li>
+                <li><a href="formulario.html">Iniciar Sesión</a></li>
+                <li>
+                    <a href="https://www.instagram.com/royal_swan1128?utm_source=qr&igsh=MzVkdGJlc2poN3I2" target="_blank">
+                        <img src="imagenes/iconoinsta.png" alt="Instagram" class="icono-instagram" />
+                    </a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+
+    <div class="navbar">
+        <a class="LOGO" href="principal.html">Royal SWAN</a>
+        <a href="registro.html">Ver Listado</a>
+        <a href="formulario.html">Iniciar Seción</a>
+    </div>
+
+    <!--carrusel-->
+   <div class="carousel">
+  <h1 class="salonh1">Echa un vistazo sobre nuestro trabajo</h1>
+  <div class="carrusel-list" id="carrusel-list">
+    <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+      <!-- SVG flecha izquierda -->
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+      </svg>
+    </button>
+
+    <div class="carrusel-track" id="track">
+
+      <!-- TARJETA 1 -->
+      
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr1.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de bodas</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 400 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-BODAS" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- TARJETA 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr2.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de bodas</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 700 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-BODAS" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr3.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de cumpleaños</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 200 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-CUMPLE" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr4.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de cumpleaños</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 300 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-CUMPLE" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 5 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr5.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de graduación</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 500 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-GRADU" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 6 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr6.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de graduación</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 300 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-GRADU" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 7 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr7.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de bautizos</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 120 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-BAUTIZO" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 8 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr8.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de bautizos</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 300 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-BAUTIZO" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 9 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr9.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de otros eventos</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 600 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-OTRO" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 10 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="imagenes/carr10.jpg" alt="Imagen del evento">
+            <button class="btn-transparente btn-flip">Ver más</button>
+          </div>
+          <div class="flip-card-back">
+            <h1><strong>Salón de otros eventos</strong></h1>
+            <p>Decoración Incluida</p>
+            <p>Capacidad: 300 personas</p>
+            <div class="back-buttons">
+              <button class="btn-regresar">Regresar</button>
+              <a href="#detalle-OTRO" class="btn-regresar">Ver más detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+    onclick="app.processingButton(event)">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+        class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512">
+        <path fill="currentColor"
+            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357
+            -9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.9
+            01l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.
+            001 33.941z">
+        </path>
+    </svg>
+  </button>
+    </div>
+  </div>
+   </div>
+
+
+   <br><br><br>
+    <div class="sobrenosotros">
+        <p>En nuestros salones, nos comprometemos a ofrecer un servicio de excelencia que haga de tu evento una
+            experiencia inolvidable. Trabajamos con dedicación para brindar decoraciones cuidadas, adaptadas a tu estilo
+            y necesidades, siempre con atención al detalle. Además, ofrecemos precios competitivos que se ajustan a tu
+            presupuesto, sin sacrificar la calidad. Nuestro equipo profesional está listo para ayudarte en cada paso,
+            garantizando que tu celebración sea perfecta, cómoda y llena de momentos especiales.</p>
+    </div>
+
+
+
+    <!--tarjetas-->
+    <section id="detalle-bodas">
+        <br><br><br><br>
+        <div class="titleArtist">
+            <p class="dayTitle"><b>Salón de </b></p>
+            <p>| Bodas</p>
+        </div>
+        <div class="viewFull">
+            <div class="viewLeft">
+                <div class="viewLeftInformation">
+                    <picture>
+                        <img class="image" src="imagenes/boda1.jpg" alt="artistas">
+                    </picture>
+                </div>
+                <div class="viewRightInformation">
+                    <h2>BODAS</h2>
+                    <p>Disfruta tu gran día en un salón elegante con capacidad para 400 personas, climatizado y decorado
+                        a
+                        tu gusto. Incluye catering completo con menú personalizado, pastel de boda, zona para ceremonia,
+                        música con DJ, mobiliario elegante, sesión de fotos profesional y estacionamiento para los
+                        invitados. Además, contarás con un coordinador de eventos que te acompaña en todo momento.
+                        Reserva
+                        ahora y recibe una visita guiada gratuita.</p>
+
+
+                </div>
+            </div>
+            <div class="viewRight">
+                <div class="viewLeftInformation">
+                    <picture>
+                        <img class="image" src="imagenes/boda02.jpeg" alt="artistas">
+                    </picture>
+                </div>
+                <div class="viewRightInformation">
+                    <ul>
+                        <h2>COSTOS SERVICIOS</h2>
+                        <li>Renta del salón: 50€ por hora </li>
+                        <li>Estacionamiento: incluido</li>
+                        <li>Sistema de sonido profesional:incluido</li>
+                        <li>Climatización: incluido</li>
+                        <li>Área privada para fotos y preparación: 30€ adicional</li>
+                        <li>Asistencia en planificación del evento: 100€ (opcional)</li>
+                        <li>Decoración personalizada: desde 150€</li>
+                        <li>Paquetes especiales (catering + decoración): desde 500€</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="detalle-BODAS">
+<br><br><br><BR><BR><BR><BR>
+    <!-- Tarjetas Bodas -->
+
+    <div class="container">
+      <div class="tarjeta">
+        <img src="imagenes/im1.jpeg" alt="Evento Boda">
+        <h3>Salón Elegance</h3>
+        <p>Espacio amplio con decoración elegante para bodas inolvidables.</p>
+        <input type="number" placeholder="Cantidad" class="btn-reservar" />
+        <br> <br>
+        <button type="submit"  class="btn-reserva">Reserva</button>
+       
+
+
+    </div>
+    <div class="tarjeta">
+        <img src="imagenes/im2.jpeg" alt="Evento Boda">
+        <h3>Salón Garden</h3>
+        <p>Ambiente con acceso a jardín ideal para ceremonias y fiestas.</p>
+        <input type="number" placeholder="Cantidad" class="btn-reservar" />
+        <br> <br>
+        <button type="submit"  class="btn-reserva">Reserva</button>
+       
+    </div>
+    <div class="tarjeta">
+        <img src="imagenes/img3.jpeg" alt="Evento Boda">
+        <h3>Salón Crystal</h3>
+        <p>Salón con luces y cristalería para un evento sofisticado.</p>
+        <input type="number" placeholder="Cantidad" class="btn-reservar" />
+        <br> <br>
+        <button type="submit"  class="btn-reserva">Reserva</button>
+       
+    </div>
+    <div class="tarjeta">
+        <img src="imagenes/im4.jpeg" alt="Evento Boda">
+        <h3>Salón Classic</h3>
+        <p>Decoración clásica y atemporal para bodas tradicionales.</p>
+        <input type="number" placeholder="Cantidad" class="btn-reservar" />
+        <br> <br>
+        <button type="submit"  class="btn-reserva">Reserva</button>
+       
+    </div>
+    </div>
+  </section>
+
+    <br><br><br>
+    <section id="detalle-cumple">
+        <div class="titleArtist">
+            <p class="dayTitle"><b>Salón de</b></p>
+            <p>| Cumpleaños</p>
+        </div>
+        <div class="viewFull">
+            <div class="viewLeft">
+                <div class="viewLeftInformation">
+                    <picture>
+                        <img class="image" src="imagenes/cumple1.jpg" alt="artistas">
+                    </picture>
+                </div>
+                <div class="viewRightInformation">
+                    <h2>CUMPLEAÑOS</h2>
+                    <p>Ofrecemos un espacio ideal para celebrar cumpleaños, con un salón amplio y decorado según la
+                        temática
+                        que prefieras. Contamos con áreas para juegos, zona para pastel y mesa de regalos, además de
+                        servicio de catering personalizado. El lugar incluye sistema de sonido y climatización para que
+                        tu
+                        fiesta sea cómoda y divertida. También ofrecemos asistencia para la organización del evento para
+                        que
+                        solo te preocupes por disfrutar.</p>
+
+                </div>
+            </div>
+            <div class="viewRight">
+                <div class="viewLeftInformation">
+                    <picture>
+                        <img class="image" src="imagenes/cumple2.jpg" alt="artistas">
+                    </picture>
+                </div>
+                <div class="viewRightInformation">
+                    <ul>
+                        <h2>COSTOS SERVICIOS</h2>
+                        <li>Renta del salón: 40€ por hora (mínimo 3 horas)</li>
+                        <li>Decoración temática básica: 100€</li>
+                        <li>Área para pastel y mesa de regalos: incluido</li>
+                        <li>Sistema de sonido y luces: incluido</li>
+                        <li>Climatización: incluido</li>
+                        <li>Servicio de catering: desde 200€ (opcional)</li>
+                        <li>Asistencia en organización del evento: 80€ (opcional)</li>
+                        <li>Paquete completo (salón + decoración + catering): desde 400€</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section id="detalle-CUMPLE">
+          <br><br><br><BR><BR><BR><BR>
+              <!-- Tarjetas cumple-->
+          
+              <div class="container">
+                <div class="tarjeta">
+                  <img src="imagenes/cum1.jpeg" alt="Evento Cumpleaños Infantil">
+                  <h3>Salón Fiesta Kids</h3>
+                  <p>Espacio colorido y divertido, ideal para cumpleaños infantiles.</p>
+                  <input type="number" placeholder="Cantidad" class="btn-reservar" />
+                  <br><br>
+                  <button type="submit" class="btn-reserva">Reserva</button>
+                </div>
+                <div class="tarjeta">
+                  <img src="imagenes/cum2.jpeg" alt="Evento Cumpleaños Juvenil">
+                  <h3>Salón Urban Party</h3>
+                  <p>Ambiente moderno y vibrante para fiestas juveniles inolvidables.</p>
+                  <input type="number" placeholder="Cantidad" class="btn-reservar" />
+                  <br><br>
+                  <button type="submit" class="btn-reserva">Reserva</button>
+                </div>
+                <div class="tarjeta">
+                  <img src="imagenes/cum3.jpeg" alt="Evento Cumpleaños Adultos">
+                  <h3>Salón Elegance</h3>
+                  <p>Decoración sofisticada para celebraciones adultas elegantes.</p>
+                  <input type="number" placeholder="Cantidad" class="btn-reservar" />
+                  <br><br>
+                  <button type="submit" class="btn-reserva">Reserva</button>
+                </div>
+                <div class="tarjeta">
+                  <img src="imagenes/cum4.jpeg" alt="Evento Cumpleaños Familiar">
+                  <h3>Salón Family</h3>
+                  <p>Espacio acogedor para reuniones y cumpleaños familiares.</p>
+                  <input type="number" placeholder="Cantidad" class="btn-reservar" />
+                  <br><br>
+                  <button type="submit" class="btn-reserva">Reserva</button>
+                </div>
+              </div>
+              
+                 
+              </div>
+              </div>
+            </section>
+          
+<br><br><br><br>
+
+    </section>
+    <div class="titleArtist">
+        <p class="dayTitle"><b>Salón de</b></p>
+        <p>| Graduaciones</p>
+    </div>
+    <div class="viewFull">
+        <div class="viewLeft">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/gradu1.jpg" alt="artistas">
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <h2>GRADUACIONES</h2>
+                <p>Nuestro espacio para graduaciones ofrece un ambiente elegante y cómodo, perfecto para celebrar este
+                    logro tan especial. Contamos con un amplio salón, sistema de sonido profesional y climatización para
+                    que todos se sientan bien durante el evento. También ofrecemos apoyo en la organización, área para
+                    fotos y catering personalizado para que la fiesta sea inolvidable.</p>
+
+            </div>
+        </div>
+        <div class="viewRight">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/gradu2.jpg" alt="artistas">
+
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <ul>
+                    <h2>COSTOS SERVICIO</h2>
+                    <li>Renta del salón: 50€ por hora (mínimo 3 horas)</li>
+                    <li>Decoración elegante personalizada: 150€</li>
+                    <li>Área para fotos y preparación: incluido</li>
+                    <li>Sistema de sonido profesional: incluido</li>
+                    <li>Climatización: incluido</li>
+                    <li>Servicio de catering: desde 250€ (opcional)</li>
+                    <li>Asistencia en organización del evento: 100€ (opcional)</li>
+                    <li>Paquete completo (salón + decoración + catering): desde 500€</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="detalle-GRADU">
+      <br><br><br><BR><BR><BR><BR>
+          <!-- Tarjetas gradu -->
+      
+          <div class="container">
+            <div class="tarjeta">
+              <img src="imagenes/gra1.jpeg" alt="Salón para Graduaciones Elegante">
+              <h3>Salón Elegance</h3>
+              <p>Espacio amplio con decoración elegante ideal para ceremonias de graduación.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/gra2.jpeg" alt="Salón con Jardín para Graduaciones">
+              <h3>Salón Garden</h3>
+              <p>Ambiente con jardín perfecto para celebraciones al aire libre y eventos formales.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/gra3.jpeg" alt="Salón Crystal para Graduaciones">
+              <h3>Salón Crystal</h3>
+              <p>Salón sofisticado con luces y cristalería para una fiesta de graduación inolvidable.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/gra4.jpeg" alt="Salón Classic para Graduaciones">
+              <h3>Salón Classic</h3>
+              <p>Decoración clásica y elegante para graduaciones formales y tradicionales.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+          </div>
+    </section>          
+<br><br><br><br>
+
+
+    <div class="titleArtist">
+        <p class="dayTitle"><b>Salón de</b></p>
+        <p>| Bautizos</p>
+    </div>
+    <div class="viewFull">
+        <div class="viewLeft">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/bauti1.jpg" alt="artistas">
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <h2>BAUTIZOS</h2>
+                <p>Nuestro salón para bautizos ofrece un ambiente cálido y familiar, ideal para celebrar este momento
+                    tan especial con tus seres queridos. Contamos con un espacio cómodo, decoración adaptada a la
+                    ocasión, zona para fotos y un servicio de catering delicioso para todos los invitados. Además, te
+                    ayudamos con la organización para que solo te preocupes por disfrutar.</p>
+            </div>
+        </div>
+        <div class="viewRight">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/bautizo2.jpeg" alt="artistas">
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <ul>
+                    <h2>COSTOS SERVICIO</h2>
+                    <li>Renta del salón: 40€ por hora (mínimo 3 horas)</li>
+                    <li>Decoración temática personalizada: 120€</li>
+                    <li>Área para fotos y preparación: incluido</li>
+                    <li>Sistema de sonido profesional: incluido</li>
+                    <li>Climatización: incluido</li>
+                    <li>Servicio de catering: desde 200€ (opcional)</li>
+                    <li>Asistencia en organización del evento: 80€ (opcional)</li>
+                    <li>Paquete completo (salón + decoración + catering): desde 400€</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="detalle-BAUTIZO">
+      <br><br><br><BR><BR><BR><BR>
+          <!-- Tarjetas Bautizo -->
+      
+          <div class="container">
+            <div class="tarjeta">
+              <img src="imagenes/bau1.jpeg" alt="Salón Elegance para Bautizos">
+              <h3>Salón Elegance</h3>
+              <p>Espacio íntimo y delicado, ideal para celebrar bautizos con estilo y calidez.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/bau2.jpeg" alt="Salón Garden para Bautizos">
+              <h3>Salón Garden</h3>
+              <p>Ambiente acogedor con jardín, perfecto para celebraciones familiares al aire libre.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/bau3.jpeg" alt="Salón Crystal para Bautizos">
+              <h3>Salón Crystal</h3>
+              <p>Salón con decoración suave y elegante, ideal para un bautizo memorable y especial.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/bau4.jpeg" alt="Salón Classic para Bautizos">
+              <h3>Salón Classic</h3>
+              <p>Decoración clásica y delicada para bautizos tradicionales y familiares.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+          </div>
+    </section>
+          
+
+<br><br><br><br>
+
+
+
+    <div class="titleArtist">
+        <p class="dayTitle"><b>Salón de</b></p>
+        <p>| Otros Eventos</p>
+    </div>
+    <div class="viewFull">
+        <div class="viewLeft">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/otra1.jpg" alt="artistas">
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <h2>OTRAS FIESTAS</h2>
+                <P>Nuestro salón es ideal para cualquier tipo de fiesta privada, sin necesidad de una temática
+                    específica. Ofrecemos un espacio amplio y cómodo, con sonido, climatización y estacionamiento para
+                    tus invitados. Además, puedes personalizar los servicios que necesites para que tu evento sea único
+                    y especial.</P>
+
+            </div>
+        </div>
+        <div class="viewRight">
+            <div class="viewLeftInformation">
+                <picture>
+                    <img class="image" src="imagenes/otra2.jpg" alt="artistas">
+                </picture>
+            </div>
+            <div class="viewRightInformation">
+                <ul>
+                    <h2>COSTOS SERVICIO</h2>
+                    <li>Renta del salón: 35€ por hora (mínimo 3 horas)</li>
+                    <li>Servicio de sonido y luces: 50€ por evento</li>
+                    <li>Climatización: incluido</li>
+                    <li>Estacionamiento para invitados: incluido</li>
+                    <li>Decoración básica: 70€ (opcional)</li>
+                    <li>Servicio de catering: desde 180€ (opcional)</li>
+                    <li>Asistencia en organización: 70€ (opcional)</li>
+                    <li>Paquete completo (salón + sonido + catering): desde 320€</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section id="detalle-OTRO">
+      <br><br><br><BR><BR><BR><BR>
+          <!-- Tarjetas OTROS -->
+      
+          <div class="container">
+            <div class="tarjeta">
+              <img src="imagenes/otro1.jpeg" alt="Salón Elegance para Otras Fiestas">
+              <h3>Salón Elegance</h3>
+              <p>Espacio versátil y moderno para todo tipo de celebraciones y eventos sociales.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/otro2.jpeg" alt="Salón Garden para Otras Fiestas">
+              <h3>Salón Garden</h3>
+              <p>Ambiente abierto con jardín para fiestas al aire libre y reuniones informales.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/otro3.jpeg" alt="Salón Crystal para Otras Fiestas">
+              <h3>Salón Crystal</h3>
+              <p>Decoración elegante con iluminación especial para eventos sofisticados.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+            <div class="tarjeta">
+              <img src="imagenes/otro4.jpeg" alt="Salón Classic para Otras Fiestas">
+              <h3>Salón Classic</h3>
+              <p>Ambiente clásico y cómodo para celebraciones familiares y sociales.</p>
+              <input type="number" placeholder="Cantidad" class="btn-reservar" />
+              <br><br>
+              <button type="submit" class="btn-reserva">Reserva</button>
+            </div>
+          </div>
+          </section>
+          
+  
+<br><br><br><br><br>
+    <script src="js/carrusel_filtros.js"></script>

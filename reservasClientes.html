@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas clientes</title>
+    <link rel="stylesheet" href="css/estilosay_reservasClientes.css"> 
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1><a href="principalClientes.html" class="texto-degradado"><img src="imagenes/logopag.jpg" alt="blaack"  height="40px" width="50px"/>Royal Swan</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Ver Listado</a></li>
+            <li><a href="principal.html">Cerrar sesion</a></li>
+            <li>
+              <a href="https://www.instagram.com/black_swam1128?igsh=MzVkdGJlc2poN3I2" target="_blank">
+                <img src="imagenes/iconoinsta.png" alt="Instagram" class="icono-instagram">
+              </a> 
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!--Saludo-->
+      <div id="saludo">
+        <h1> Hola <span id="nombreCliente"></span> , aqui encontraras tus reservas</h1>
+      </div>
+ 
+
+    <div id="contenedor_tabla">
+      <table>
+        <thead>
+          <!--tr para las filas-->
+          <tr>
+            <!-- th para las columnas-->
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+         
+          </tr>
+        </thead>
+        <tbody id="tabla_cuerpo"></tbody>
+      </table>
+    </div>
+
+    <br>
+
+      <div id="contenedorVer">
+        <ul id="listaVer"></ul>
+      </div>  
+
+      <div id="contenedorModificar">
+        <form id="formularioModificar"></form>
+      </div>
+      
+      <div id="contenedorReserva">
+        <ul id="listaReserva"></ul>
+
+
+      </div>
+
+    </div>
+    
+    <script src="js/script_registro_clientes.js"></script>
+    
+  </body>
+</html>

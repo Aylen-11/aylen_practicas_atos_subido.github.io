@@ -1,0 +1,574 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/736x/be/17/89/be178906d3fdf80acc5868fc821632f1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  
+  header {
+    background: linear-gradient(to right, #380303, #792929, #380303);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  
+  .texto-degradado {
+    font-size: 30px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #ffffff, #fc8e8e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-left: 8px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .royal {
+    background: linear-gradient(to right, #380303, #751f1f, #380303);
+    font-size: 100px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  
+  }
+  
+  
+  .texto-solo {
+    font-size: 28px;
+    font-family: 'Prata', serif;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #ffffff, #df7a7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-left: 9px;
+    position: relative;
+    top: 7px;
+  }
+  
+  .imglogo {
+    display: block;
+  
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 60px;
+    font-family: 'Prata', serif;
+  }
+  
+  nav ul li a:hover {
+    color: #ffd6d6;
+  }
+  
+  .icono-instagram {
+    width: 32px;
+    height: 32px;
+    margin-right: 90px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .icono-instagram:hover {
+    transform: scale(1.1);
+  }
+  
+  #descargarJson {
+    width: 150px;
+    height: 20px;
+  }
+  
+  #contenedor_formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  
+    margin-top: 115px;
+  }
+  
+  #segundo_contenedor_formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #contenedor_tabla {
+    margin-top: 50px;
+    --border-width: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 17px;
+    text-size-adjust: 15px;
+    text-transform: uppercase;
+    color: #430202;
+    background: #ffffff;
+    border-radius: 10px;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(60deg,
+          #8f0505,
+          #a74b4b,
+          #790606);
+      background-size: 600% 600%;
+      background-position: 0 50%;
+      border-radius: 10px; 
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 200% 50%;
+    }
+  }
+  
+  #contenedor_tabla th {
+    padding: 45px 86px;
+  }
+  
+  #contenedor_tabla tbody {
+    align-content: center;
+  
+  }
+  #contenedor_tabla tbody tr {
+    background-color: #fcf3f3; /* rosa muy claro */
+    color: #430202; /* texto color oscuro */
+  }
+  
+  
+  .h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  #formulario {
+    background-color: #5e0101;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px;
+    border-radius: 3%;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+  }
+  textarea#desc {
+    width: 85%;        
+    height: 70px;       
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    resize: none;
+  }
+  
+  input[type="text"] {
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 220px;
+    font-size: 14px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #4b0000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px 98px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(355, 355, 355);
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button:hover {
+    transform: scale(1.05);
+    color: #310000;
+  }
+  textarea#desc {
+    width: 85%;        
+    height: 70px;       
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    resize: none;         
+  }
+  
+  
+  #mensaje {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .label-file {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: rgb(91, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 13px 26px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .label-file:hover {
+    transform: scale(1.05);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 8px solid var(--hard-purple);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: linear-gradient(45deg, #f49f9f, #3f0101);
+  }
+  
+  /* Fondo oscuro modal */
+  #fondoModal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  
+  /* Contenedor del modal */
+  #modalDetalles {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
+    z-index: 1000;
+  }
+  
+  /* Contenido del detalle */
+  #contenidoDetalles {
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Botón cerrar modal */
+  #cerrarModal {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  #cerrarModal:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  #listaReserva{ /* ventana de ver reserva*/
+    background-color: #ffffff; 
+    color: #380303;
+    
+    
+  
+  }
+  .btn-ver {
+    background: linear-gradient(to right, #4b0000, hsl(0, 98%, 26%));
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  .btn-ver:hover {
+    background-color: #ffeaea;
+    transform: scale(1.05);
+  }
+  
+  
+  /* boton modificar */
+  .btn-modificar {
+    background: linear-gradient(to right, #4b0000, hsl(0, 98%, 26%));
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  .btn-modificar:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  
+  /* ver reserva*/
+  .btn-verreserva {
+    background: linear-gradient(to right, #4b0000, hsl(0, 98%, 26%));
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  .btn-verreserva:hover {
+    background-color: #ffeaea;
+    transform: scale(1.05);
+  }
+  
+  /*boton eliminar*/
+  .btn-eliminar {
+    background: linear-gradient(to right, #4b0000, hsl(0, 98%, 26%));
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  .btn-eliminar:hover {
+    
+    transform: scale(1.05);
+  }
+  
+  
+  /*boton cerrar*/
+  .btn-cerrar {
+    background: linear-gradient(to right, #b22222, #8b0000);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(139, 0, 0, 0.7);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+  /*modificar y cerra*/
+  .btn-guardar {
+    background: linear-gradient(to right, #b22222, #680101);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-guardar:hover {
+    background-color: #ffffff;
+    color: white;
+  }
+  
+  .btn-cerrar {
+    background: linear-gradient(to right, #ffffff, #5e0101);
+    color: rgb(114, 0, 0);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .btn-cerrar:hover {
+    background-color: #ffffff;
+    color: white;
+    
+  }
+  
+  /*VENATANA EMERGENTE DE VER*/
+  
+  /* Fondo del modal */
+  #contenedorVer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(196, 196, 196, 0.548); 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+  /* VENTANA EMERGENTE DE VER */
+#contenedorVer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; /* Inicialmente oculto */
+}
+
+#listaVer {
+    background-color: #ffffff; 
+    border: 2px solid #460101;
+    font-size: 20px;
+    font-family: 'Prata', serif;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #460101;
+    list-style-type: none;
+    animation: aparecer 0.3s ease;
+}
+
+#listaVer ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+#listaVer button {
+    margin-top: 15px;
+    background-color: #910606;
+    color: rgb(75, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#listaVer button:hover {
+    background-color: #680101;
+}
+
+/* Animación de entrada */
+@keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  /* vetana emergente de ver todas la reservas*/
+  
+  
+  
+  
+  
+  
