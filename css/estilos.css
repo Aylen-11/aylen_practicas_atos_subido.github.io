@@ -451,7 +451,6 @@ nav ul li a:hover {
     -12px -12px 25px #ffffff;
 }
 
-/* Imagen redondeada */
 .tarjeta img {
   width: 90%;
   height: 260px;
@@ -466,7 +465,6 @@ nav ul li a:hover {
   box-shadow: 0 12px 25px rgb(255, 255, 255);
 }
 
-/* Título elegante */
 .tarjeta h3 {
   font-weight: 700;
   font-size: 26px;
@@ -477,7 +475,7 @@ nav ul li a:hover {
   text-shadow: 1px 1px 2px #fcd7dd;
 }
 
-/* Descripción */
+
 .tarjeta p {
   font-weight: 400;
   font-size: 16px;
@@ -488,7 +486,6 @@ nav ul li a:hover {
   padding: 0 10px;
 }
 
-/* Botón elegante */
 .btn-reserva {
   background-color: #420101;
   color: #fff;
@@ -546,4 +543,18 @@ nav ul li a:hover {
 .btn-reservar:hover {
   background-color: #ffffff;
   columns: rgb(58, 0, 0);
+}
+
+
+.footer {
+  background: linear-gradient(to right, #380303, #4e0303, #380303);
+  color: white;
+  cursor: copy;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Prata', serif;
 }
